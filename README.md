@@ -13,13 +13,21 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Deployment
 
-The project is linked to Vercel and deploys automatically on pushes to `main`.
+This repo deploys to the **vibestackplus** Vercel project only (not `chords-fp96` / Wishees).
 
-Manual deploy:
+Pushes to `main` trigger automatic production deploys via the GitHub integration.
+
+Manual deploy (always targets `vibestackplus`):
 
 ```bash
-npx vercel --prod
+npm run deploy
 ```
+
+Production URLs:
+
+- https://vibestackplus.com
+- https://www.vibestackplus.com
+- https://vibestackplus.vercel.app
 
 ## Scripts
 
