@@ -2,12 +2,15 @@
   "name": "vibestackplus",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.15.9",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "build:vercel": "npm run build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
+    "prepare": "node scripts/install-git-hooks.mjs",
     "deploy": "vercel deploy --prod --yes --scope wishees --project vibestackplus"
   },
   "dependencies": {

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if command -v pnpm >/dev/null 2>&1; then
+  pnpm run typecheck
+  pnpm run lint
+else
+  npm run typecheck
+  npm run lint
+fi
