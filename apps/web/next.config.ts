@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true,
+  transpilePackages: ["@scaffold/shared"],
 };
 
 export default nextConfig;

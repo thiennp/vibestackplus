@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VibeStack Plus",
-  description: "VibeStack Plus — deployed on Vercel",
+  title: "Scaffold Platform",
+  description: "Scaffolding as a Service — configure your stack and deploy locally",
 };
 
 export default function RootLayout({
