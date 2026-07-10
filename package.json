@@ -2,19 +2,22 @@
   "name": "scaffold-platform",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.33.3",
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
+    "build:vercel": "turbo build --filter=@scaffold/web",
     "vercel-build": "turbo build --filter=@scaffold/web",
     "lint": "turbo lint",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "prepare": "node scripts/install-git-hooks.mjs",
+    "deploy": "vercel deploy --prod --yes --scope wishees --project vibestackplus"
   },
   "devDependencies": {
     "next": "^15.3.4",
     "turbo": "^2.5.4",
     "typescript": "^5.8.3"
   },
-  "packageManager": "pnpm@10.33.3",
   "engines": {
     "node": ">=20"
   }
